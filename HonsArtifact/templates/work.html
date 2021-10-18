@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titleblock %}
+  How does it work?
+{% endblock %}
+
+{% block bodyblock %}
+<div class="container">
+<div class="container">
+  <div class="jumbotron" style="background-color: #eb5e28; margin: 20px; text-align: center;">
+    <h1><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+  <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"/>
+</svg> How does it work?</h1>
+    <h5>Basic description on how the speed is predicted</h5>
+</div>
+
+  <div class="card border-dark mb-3" style="max-width: 80rem;">
+    <div class="card-header" style="background-color: #403d39; color:#fffcf2;">Neural Networks</div>
+    <div class="card-body text-dark">
+      <h5 class="card-title">Basic Neural Network Overview</h5>
+      <p class="card-text">Computers are efficient for doing specific calculations and tasks much faster than humans, such as complex math problems. Unfortunately, basic computers also have limitations. A human can easily do some elementary functions that cannot always be done by a computer, such as determining whether a given image is either a car or a boat (Heaton, 2008). By combining the functionalities of a human brain and a computer, we will be able to train a computer to do some of the tasks a human can. This can be done by creating neural networks, which are computer systems modelled on the human brain and nervous system (Smith et al., 2020). Neural networks can be trained to detect specific patterns in data and then give output results on these patterns (Tu, 1996). Thus, by using neural networks, it is also possible to train a computer to detect the difference between a car and a boat and other types of patterns. </p>
+    </div>
+  </div>
+
+  <div class="card" style="max-width: 80rem;">
+  <img class="card-img-top" src="{% static 'nn1.png' %}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title" style="background-color: #403d39; color:#fffcf2;">Multi-Layer Neural Network</h5>
+    <p class="card-text">A multi-layer neural network consists of an input layer, an output layer, and one or more hidden layers between the input and the output layer. Information or data transfers from the input layer through the hidden layer(s) towards the output layer. By using hidden layers, the network can extract higher-order patterns that predict and compute more accurate outputs. A visual example of a multi-layer feed-forward neural network is shown in Figure 6 (Murat, 2006):</p>
+  </div>
+
+  <div class="card" style="max-width: 80rem;">
+  <img class="card-img-top" src="{% static 'data.png' %}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title" style="background-color: #403d39; color:#fffcf2;">Data Collection and Correlation</h5>
+    <p class="card-text">The graph above is a visual representation of all the data being recorded while driving. This data was recorded by making use of the ELM-327 dongle that retrieves the data from a car’s OBD system. The red line on top is the current speed of a vehicle at a specific time. The other lines displayed on the graph, are data retrieve from other sensors within the car. It is clear that these other values being recorded have a direct correlation with the speed of the vehicle. 
+When making use of an OBD system is possible to collect many different types of data. The data can be normalized, and be modelled by a feed-forward neural network. The neural network might be able to predict the speed of a car at specific times.
+</p>
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block titleblock %} Project Info {% endblock %}
+{% block bodyblock %}
+
+  <div class="container">
+  <div
+    class="jumbotron"
+    style="background-color: #eb5e28; margin: 20px; text-align: center"
+  >
+    <h1><b><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+</svg> Project Information</b></h1>
+    <h5>Information regarding this project:</h5>
+  </div>
+  </div>
+<div class="container">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card border-dark mb-3" style="max-width: 20rem">
+      <div class="card-header" style="background-color: #403d39;"><b style="color:#fffcf2">For What?</b></div>
+      <div class="card-body text-dark">
+        <h5 class="card-title" >NWU-Honours 2021</h5>
+        <p class="card-text" style="background-color:#fffcf2">
+          This application/program is created for my 2021-honours degree at the NWU. This project was given to us at the begining of 2021 and we had 9 months to complete it 
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm">
+      <div class="card border-dark mb-3" style="max-width: 20rem">
+      <div class="card-header" style="background-color: #403d39;"><b style="color:#fffcf2">Title</b></div>
+      <div class="card-body text-dark">
+        <h5 class="card-title">Project Title</h5>
+        <p class="card-text" style="background-color:#fffcf2">
+           The title of this project given to me was the following: <b>Feed-forward neural network modelling of vehicle speed with onboard diagnostics</b>                             
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm">
+      <div class="card border-dark mb-3" style="max-width: 20rem">
+      <div class="card-header" style="background-color: #403d39;"><b style="color:#fffcf2">Research Question</b></div>
+      <div class="card-body text-dark">
+        <h5 class="card-title">The Project Research Question</h5>
+        <p class="card-text" style="background-color:#fffcf2">
+          How can a feed-forward neural network alongside training data received from a vehicle's onboard diagnostics system be conducted to predict the speed of the car?
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div>
+{% comment %} Second row {% endcomment %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card border-dark mb-3" style="max-width: 20rem">
+      <div class="card-header" style="background-color: #403d39;"><b style="color:#fffcf2">Description</b></div>
+      <div class="card-body text-dark">
+        <h5 class="card-title">The Project Description</h5>
+        <p class="card-text" style="background-color:#fffcf2">
+          A vehicle’s speed will be predicted by using a feed-forward neural network and a large set of training data within the project. The data will be collected by utilising an on-board diagnostics device (OBD II) and an ELM-327 dongle. After the data have been collected it will be processed to be modelled by the feed-forward neural network. The neural network will be trained to accurately predict the speed of the vehicle by using variables like engine speed, coolant temperature, engine load, selected gear, brake pedal use, and battery voltage.
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm">
+      <div class="card border-dark mb-3" style="max-width: 20rem">
+      <div class="card-header" style="background-color: #403d39;"><b style="color:#fffcf2">Ussage</b></div>
+      <div class="card-body text-dark">
+        <h5 class="card-title">Possible Ussages</h5>
+        <p class="card-text" style="background-color:#fffcf2">
+          When using the OBD system, it is possible to collect a large quantity of data from the car, this data includes engine revolutions per minute, carbon dioxide emissions, speed, fuel usage, and engine temperature. All of this data can help optimise the efficiency of the vehicle. When the efficiency of a car is optimised people get to their destination faster and safer, there is less air pollution, and money is saved.
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm">
+      <div class="card border-dark mb-3" style="max-width: 20rem">
+      <div class="card-header" style="background-color: #403d39;"><b style="color:#fffcf2">Application</b></div>
+      <div class="card-body text-dark">
+        <h5 class="card-title">Possible applications of the program</h5>
+        <p class="card-text" style="background-color:#fffcf2">
+         For example, insurance companies, transport companies and department of transport. If the data is being sent to a cloud-based database and information on driver speed can be saved and monitored, insurance companies, transport companies and the department of transport can evaluate driver performance. If a driver is not reckless and drives the speed limit insurance companies can then adjust the premium for each driver according to their driving performance. The department of transport can also be able to check if drivers are driving according to the speed limit, if not it will be able to fine the drivers. Transport companies would be able to check if the drivers of the companies drive the speed limits and not reckless.
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div>
+{% endblock %}
